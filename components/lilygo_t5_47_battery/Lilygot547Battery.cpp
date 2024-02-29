@@ -15,8 +15,9 @@ void Lilygot547Battery::update() {
 }
 void Lilygot547Battery::update_battery_info() {
   Lilygot547Battery::correct_adc_reference();
-  // 14 Battery on T5-4.7 inch ESP32-S3 (aka "plus"/V2.3)
-  uint16_t v = analogRead(14);
+  // 36 main power supply ?
+  // 35 battery ?
+  uint16_t v = analogRead(36);
   double_t battery_voltage = ((double_t) v / 4095.0) * 2.0 * 3.3 * (this->vref / 1000.0);
   if (this->voltage != nullptr) {
     this->voltage->publish_state(battery_voltage);
