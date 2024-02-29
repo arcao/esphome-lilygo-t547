@@ -1,9 +1,9 @@
 This repository contains a Battery component for [ESPHome](https://esphome.io/)
-to support the ESP32-S3 [LILYGO T5 4.7" Plus E-paper display](https://www.lilygo.cc/products/t5-4-7-inch-e-paper-v2-3).
+to support the ESP32 LILYGO T5 4.7" E-paper display.
 
-(Do not confuse it with the original ESP32-based Lilygo T5 4.7 board.)
+(Do not confuse it with the plus version based on ESP32-s3.)
 
-This component was shoddily adapted from a component for the older board revision by [vbaksa](https://github.com/vbaksa/esphome/tree/dev/esphome/components/lilygo_t5_47_battery), so it definitely needs improvement.  
+This is updated component originaly created by [vbaksa](https://github.com/vbaksa/esphome/tree/dev/esphome/components/lilygo_t5_47_battery), so it definitely needs improvement.  
 
 ## Usage
 
@@ -14,7 +14,7 @@ number of options in your esphome config**, see the examples at https://github.c
 # ... required esp32, platformio_options configuration omitted for brevity ...
 
 external_components:
-  - source: github://kaeltis/esphome-lilygo-t547plus
+  - source: github://arcao/esphome-lilygo-t547
     components: ["lilygo_t5_47_battery"]
 
 sensor:
